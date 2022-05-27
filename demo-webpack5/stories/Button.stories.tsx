@@ -4,4 +4,4 @@ export default {
   title: 'Button'
 } as Meta;
 
-export const Button: Story = () => '<button type="button">Button</button>';
+export const Button: Story = () => '<div class="framework"><button class="button" type="button">Button</button></div>';

@@ -11,12 +11,14 @@
     "@storybook/builder-webpack5": "^6.3.12",
     "@storybook/html": "^6.3.12",
     "@storybook/manager-webpack5": "^6.3.12",
-    "babel-loader": "^8.2.3"
+    "babel-loader": "^8.2.3",
+    "sass": "^1.52.1"
   },
   "dependencies": {
     "storybook-design-token": "^2.0.0"
   },
   "scripts": {
+    "styles": "sass styling:dist --style=compressed",
     "start": "start-storybook -p 6006 --no-manager-cache",
     "build-storybook": "build-storybook"
   }

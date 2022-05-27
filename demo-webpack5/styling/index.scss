@@ -1,0 +1,5 @@
+@use "sass:meta";
+
+.framework {
+  @include meta.load-css('./button');
+}

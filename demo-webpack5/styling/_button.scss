@@ -1,0 +1,5 @@
+@use "./tokens";
+
+.button {
+  background-color: tokens.$b500;
+}
