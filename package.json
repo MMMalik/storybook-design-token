@@ -1,13 +1,66 @@
 {
-  "private": true,
-  "workspaces": [
+  "name": "storybook-design-token",
+  "version": "2.4.0",
+  "main": "dist/preset.js",
+  "license": "MIT",
+  "keywords": [
+    "storybook",
     "addon",
-    "demo"
+    "design system",
+    "design pattern",
+    "design tokens",
+    "react",
+    "angular",
+    "vue"
   ],
-  "resolutions": {
-    "hosted-git-info": "2.8.9",
-    "ssri": "8.0.1",
-    "ws": "^6.2.2"
+  "author": {
+    "name": "Philipp Siekmann",
+    "email": "philipp.siekmann@uxi.de",
+    "url": "https://www.uxi.de"
   },
-  "dependencies": {}
+  "readme": "../README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UX-and-I/storybook-design-token"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "tsc -p . -w",
+    "build": "rm -rf dist && tsc -p ."
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@storybook/addons": "^6.3.12",
+    "@storybook/components": "^6.3.12",
+    "@storybook/theming": "^6.3.12",
+    "jsdom": "^19.0.0",
+    "polished": "^4.1.3",
+    "postcss": "^8.3.11",
+    "postcss-scss": "^4.0.2",
+    "raw-loader": "^4.0.2",
+    "react-storage-hooks": "^4.0.1",
+    "react-use-clipboard": "^1.0.7",
+    "react-virtual": "^2.10.4"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^6.3.12",
+    "@types/jsdom": "^16.2.14",
+    "@types/node": "^16.11.7",
+    "@types/react": "^17.0.1",
+    "typescript": "^4.4.4"
+  }
 }
